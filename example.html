@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tweetthis</title>
+	<script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<h1>Tweetthis.js&nbsp;<a href="https://github.com/d4software/tweetthisjs"><span class="fa fa-github"></span></a></h1>
+		<h2>Turn any &lt;div&gt; into a tweetable quote</h2>
+		<p class="lead">A javascript snippet which turns any <code>div</code> with the class <code>tweetthis</code> into a tweetable quote.</p>
+		<h3>Example</h3>
+
+		<!-- Here's the example -->
+		<div class="lead tweetthis">I made this div tweetable with tweetthis.js #omg</div>
+		<!-- /example -->
+
+		<h3>Prerequisites</h3>
+		<p class="lead">Tweetthis.js was extracted from <a href="https://querytreeapp.com">QueryTree</a>, so relies on the same prerequisites we used there;</p>
+		<dl class="dl-horizontal">
+			<dt>jQuery 3.3.1</dt>
+			<dd>to make the JS work</dd>
+			<dt>Bootstrap</dt>
+			<dd>button styling</dd>
+			<dt>Font Awesome</dt>
+			<dd>for the Twitter icon</dd>
+		</dl>
+		<h3>Usage</h3>
+		<ol>
+			<li>Include tweetthis.js or paste into the body of the page, after jQuery</li>
+			<li>Add a <code>tweetthis</code> class to the relevant <code>div</code></li>
+			<li>Optionally add styles to <code>.btn-tweetthis</code> in your CSS as needed</li>
+		</ol>
+		<h3>Enjoy!</h3>
+		<hr>
+		<p class="small text-muted">Made with &hearts; by <a href="https://twitter.com/d4software">@d4software</a> &bull; MIT Licence</p>
+	</div>
+
+
+
+
+<!-- Tweetthis -->
+<script type="text/javascript">
+$(document).ready (function(){
+  $("div.tweetthis").each(function(i, e) {
+    var text = $(e).text();
+
+    if (text.length > 116) {
+      text = text.slice(0, 113) + "...";
+    }
+    text = text + " " + window.location;
+    text = encodeURIComponent(text);
+    
+    var newHtml = $("<a class='btn btn-tweetthis' target='_blank'></a>")
+      .attr('href', "https://twitter.com/intent/tweet?text=" + text)
+      .html("<span class='fa fa-twitter'></span> Tweet This");
+
+    $(e).append(newHtml);
+  });
+});
+</script>
+<!-- /Tweetthis -->
+
+
+
+</body>
+</html>
