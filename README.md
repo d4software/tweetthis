@@ -1,28 +1,16 @@
 # Tweetthis.js 
 
-## Turn any <div> into a tweetable quote
+## Turn any `div` into a tweetable quote
 
 A javascript snippet which turns any `div` with the class `tweetthis` into a tweetable quote.
-
-### Example
-
-I made this div tweetable with tweetthis.js #omg[ Tweet This](https://twitter.com/intent/tweet?text=I%20made%20this%20div%20tweetable%20with%20tweetthis.js%20%23omg%20http%3A%2F%2Flocalhost%3A8000%2Fexample.html)
 
 ### Prerequisites
 
 Tweetthis.js was extracted from [QueryTree](https://querytreeapp.com/), so relies on the same prerequisites we used there;
 
-- jQuery 3.3.1
-
-  to make the JS work
-
-- Bootstrap
-
-  button styling
-
-- Font Awesome
-
-  for the Twitter icon
+- jQuery 3.3.1 - to make the JS work
+- Bootstrap - button styling
+- Font Awesome - for the Twitter icon
 
 ### Usage
 
