@@ -6,7 +6,7 @@ A javascript snippet which turns any `div` with the class `tweetthis` into a
 
 ### Prerequisites
 
-Tweetthis.js was extracted from [QueryTree](https://querytreeapp.com/), so relies on the same prerequisites we used there;
+Tweetthis.js was extracted from [QueryTree](http://querytreeapp.com/), so relies on the same prerequisites we used there;
 
 - jQuery 3.3.1 - to make the JS work
 - Bootstrap - button styling
