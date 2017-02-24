@@ -2,7 +2,7 @@
 
 ## Turn any `div` into a tweetable quote
 
-A javascript snippet which turns any `div` with the class `tweetthis` into a tweetable quote.
+A javascript snippet which turns any `div` with the class `tweetthis` into a tweetable quote - complete with a link back to the source page.
 
 ### Prerequisites
 
